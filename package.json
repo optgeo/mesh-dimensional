@@ -6,6 +6,7 @@
   "author": "Hidenori Fujimura <hfu@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "@turf/center-of-mass": "^6.0.1",
     "csv": "^5.3.2",
     "japanmesh": "^0.1.0"
   }
