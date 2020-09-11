@@ -3,12 +3,18 @@ PoC: point and polygon from a meshcode using Node.js
 
 # Install
 ```bash
+git clone git@github.com:optgeo/mesh-dimensional
+cd mesh-dimensional
 yarn
 ```
 
 # Use
+```bash
+rake
+```
 
 # Tools used
+- Node.js
 - tippecanoe-json-tool: to convert GeoJSONS into GeoJSON.
 
 # Source
