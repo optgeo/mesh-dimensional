@@ -1,5 +1,5 @@
 # mesh-dimensional
-PoC: point and polygon from a meshcode using Node.js
+Proof of Concept (PoC) for the idea to generate both point and polygon features from a meshcode. Implemented on Node.js and Tippecanoe.
 
 # Install
 ```bash
