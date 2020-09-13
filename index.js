@@ -11,13 +11,17 @@ const parser = csv.parse((err, data) => {
   for(const r of data) {
     let properties = {}
     for(let i = 0; i < keys.length; i++) {
-      properties[keys[i]] = r[i]
+      if (i === 0) {
+        properties[keys[i]] = r[i]
+      } else {
+        properties[keys[i]] = Number(r[i])
+      }
     }
 
     // Polygon
     let f = japanmesh.toGeoJSON(r[0], properties)
     f.tippecanoe = {
-      layer: 'layer',
+      layer: 'stat',
       minzoom: 7
     }
     console.log(`\x1e${JSON.stringify(f)}`)
@@ -25,7 +29,7 @@ const parser = csv.parse((err, data) => {
     // Points
     f = centerOfMass(f, {properties: properties})
     f.tippecanoe = {
-      layer: 'layer',
+      layer: 'stat',
       maxzoom: 6
     }
     console.log(`\x1e${JSON.stringify(f)}`)

@@ -10,7 +10,9 @@ yarn
 
 # Use
 ```bash
-rake
+rake tiles
+rake style
+rake host
 ```
 
 # Tools used
