@@ -62,7 +62,7 @@
       "type": "fill-extrusion"
     }
   ],
-  "site_root": "http://localhost:9966",
+  "site_root": "https://optgeo.github.io/mesh-dimensional",
   "sources": {
     "i": {
       "tileSize": 256,
@@ -75,7 +75,7 @@
       "attribution": "「経済センサス－活動調査 産業（大分類）別事業所数及び従業者数 M3928 2019-09-25」(総務省 統計局統計調査部経済統計課) を加工して作成",
       "maxzoom": 7,
       "tiles": [
-        "http://localhost:9966/zxy/{z}/{x}/{y}.pbf"
+        "https://optgeo.github.io/mesh-dimensional/zxy/{z}/{x}/{y}.pbf"
       ],
       "type": "vector"
     }
